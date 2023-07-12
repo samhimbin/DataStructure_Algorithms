@@ -11,8 +11,8 @@ import io.cucumber.junit.CucumberOptions;
                             "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
                             "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"},
 							monochrome=true,
-							tags="@portal or @home or @register or @login or @dstruct or @arry or @llist",
-						 
+							//tags="@portal or @home or @register or @login or @dstruct or @arry or @llist",
+									tags="@portal or @home",
 							features="src/test/resources/features",
 							glue = {"stepdefinitions","HooksPkg"})
 

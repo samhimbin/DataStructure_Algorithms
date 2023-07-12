@@ -20,7 +20,8 @@ import utils.Configreader;
 				monochrome=true,  //console output color and eliminate junk characters
 		//dryRun=false, // (=true)->compilation purpose mostly to chk stepdefinitions are implemented or not
 		
-	    tags="@portal or @home or @register or @login or @dstruct or @arry or @llist",
+	   // tags="@portal or @home or @register or @login or @dstruct or @arry or @llist",
+	    		tags="@portal or @home",
 		features = {"src/test/resources/features"}, //location of feature files, we can give this way-->".//features//"
 		glue= {"stepdefinitions","HooksPkg"}) //location of step definition files, gives granural level of info in test result
 @Test

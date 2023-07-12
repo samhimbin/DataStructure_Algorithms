@@ -20,8 +20,8 @@ public class Hooks {
 		public static void before() throws Throwable
 		{
 			System.out.println("enter hooks beforeall");
-			String browser	=Configreader.loadConfig();
-			//String browser=	Configreader.getBrowserType();
+			//String browser	=Configreader.loadConfig(); //this is  for junit
+			String browser=	Configreader.getBrowserType(); // this is for cross browser TestNG runner
 			driversetup=new DriverSetup();
 			driver=driversetup.getdesireDriver(browser);
 			
